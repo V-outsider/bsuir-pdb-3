@@ -1,3 +1,4 @@
+import random
 import networkx as nx
 import pandas as pd
 import streamlit as st
@@ -33,7 +34,7 @@ def show_tab_view():
     st.divider()
 
     if option:
-        with open(f'./tmp/{option}', 'r') as rdf_file:
+        with open(f'./tmp/{option}', 'r', encoding='utf-8') as rdf_file:
             if rdf_file is not None:
                 edges = []
                 nodes = []
@@ -124,6 +125,9 @@ def show_tab_view():
     if st.button("Execute update"):
         g.update(sparql_update_req)
 
-        g.serialize(destination=f"./tmp/{option}_modified_data_{datetime.datetime.now()}.rdf", format="xml")
+        # with open('tmp/output.rdf', 'wb') as file:
+        #     file.write(g.serialize(format='xml'))
+
+        g.serialize(destination="tmp/modified_data_{}_.rdf".format(random.randint(1, 100000)), format="xml")
 
         st.write("Result - Success: 200 OK")
