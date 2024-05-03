@@ -4,7 +4,7 @@ from components.tabs.show import show_tab_view
 from components.tabs.uploader import uploader_tab_view
 
 def main():
-    st.title("RDF менеджер by Slavyan")
+    st.title("3 лабка онтологии менеджерить Гаевой")
 
     tab1, tab2 = st.tabs(["Просмотр и управление", "Сохранение"])
 
