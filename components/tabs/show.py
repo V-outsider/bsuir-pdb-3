@@ -5,7 +5,7 @@ import streamlit as st
 import datetime
 import asyncio
 
-from rdflib import Graph
+from rdflib import Graph, URIRef, RDF, OWL
 from streamlit_agraph import agraph, Node, Edge, Config
 
 from components.helpers.tools import get_saved_onthologies
@@ -108,26 +108,76 @@ def show_tab_view():
 
     st.divider()
     st.header('Консоль запросов SPARQL (UPDATE)')
+    
+    class_name = st.text_input("Введите имя класса:")
 
-    sparql_update_req = st.text_area(
-        "Введите SPARQL (INSERT/UPDATE/DELETE) запрос:",
-        '''PREFIX ex: <http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#>
+    if st.button("Создать класс отдельно"):
 
-           INSERT DATA {
-            ex:John ex:age 30 ;
-            ex:name "John Doe" .
-            ex:Mary ex:age 25 ;
-            ex:name "Mary Smith" .
-}
-        '''
-    )
+        class_uri = f"http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#{class_name}"
 
-    if st.button("Execute update"):
-        g.update(sparql_update_req)
+        g.add((URIRef(class_uri), RDF.type, OWL.Class))
 
-        # with open('tmp/output.rdf', 'wb') as file:
-        #     file.write(g.serialize(format='xml'))
+    
+        # Сериализуйте граф в формате XML и сохраните его
+        g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
+    
+        st.write("Класс создан.")
 
-        g.serialize(destination="tmp/modified_data_{}_.rdf".format(random.randint(1, 100000)), format="xml")
+    object_name = st.text_input("Введите имя объекта:")
 
-        st.write("Result - Success: 200 OK")
+    # object_name = st.text_input("Введите имя объекта:")
+    # instance_name = st.text_input("Введите имя экземпляра:")
+    if st.button("Создать обьект отдельно"):
+    # Генерируйте соответствующие тройки RDF на основе введенных значений в поля
+        
+        object_uri = f"http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#{object_name}"
+
+        g.add((URIRef(object_uri), RDF.type, OWL.ObjectProperty))
+
+        g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
+    
+        st.write("Обьект создан.")
+
+    instance_name = st.text_input("Введите имя экземпляра:")
+    if st.button("Создать экземпляр отдельно"):
+
+        instance_uri = f"http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#{instance_name}"
+
+        g.add((URIRef(instance_uri), RDF.type, OWL.NamedIndividual))
+    
+        g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
+    
+        st.write("Экземпляр создан.")
+
+    
+# Получить список классов из графа
+    class_names = [str(class_uri).split('#')[-1] for class_uri in g.subjects(RDF.type, OWL.Class)]
+    
+    # Вывести выпадающий список для выбора класса
+    selected_class = st.selectbox("Выберите класс", class_names)
+    
+    if st.button("Создать"):
+        instance_name = st.text_input("Введите имя нового экземпляра")
+    
+        if instance_name:
+            # Получить URI выбранного класса
+            class_uri = next(g.subjects(RDF.type, URIRef(selected_class)))
+    
+            # Генерируйте URI для нового экземпляра
+            instance_uri = f"{class_uri}#{instance_name}"
+    
+            # Добавить новый экземпляр в выбранный класс
+            g.add((URIRef(instance_uri), RDF.type, URIRef(class_uri)))
+    
+            # Сериализуйте граф в формате XML и сохраните его
+            g.serialize(destination="tmp/modified_data_{}_.rdf".format(random.randint(1, 100000)), format="xml")
+    
+            st.write("Экземпляр успешно создан в классе", selected_class)
+        else:
+            st.write("Введите имя нового экземпляра.")
+    
+        if st.button("Сохранить"):
+            # Сериализуйте граф в формате XML и сохраните его
+            g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
+    
+        st.write("Изменения сохранены.")

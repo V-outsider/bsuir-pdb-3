@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:untitled-ontology-14="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#осложнение">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Streptococcus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Патоген"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#кожа"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#лимфотические_узлы"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#почки"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Стрептокок группы А</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">495934</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#обнаруживается">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#test"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#pileoferit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Пилеоферит</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+    <rdfs:label>Бактериальные инфекции кожи</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Shigella">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#желудок"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#тонкий_кишечник"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шигелла</untitled-ontology-14:русское_название>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#мочевой_пузырь">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#urinary_system"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+    <rdfs:label>Бактериальные инфекции</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#skin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+    <rdfs:label>Ткань</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#вызывает">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#cistit"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#pileoferit"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#pnevmonia"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#tuberkulez"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#гортань">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#down_respiratory_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Воздух">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Тип_передачи"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Helicobacter_pylori">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#толстый_кишечник"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#тонкий_кишечник"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Хелиобкатер пьери</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1755</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Культуральный_тест">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#test"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Хронический_туберкулез">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#носоглотка">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Staphylococcus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Патоген"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#бронхи"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#кожа"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#костный_мозг"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#легкие"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#почки"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#int">Стафилококк</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">765894</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Escherichia_coli">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#мочевой_пузырь"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#почки"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Кишечная палочка</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21432568</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#urinary_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#system"/>
+    <rdfs:label>Мочевая система</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#кожа">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#skin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#костный_мозг">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#raspiratory_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#system"/>
+    <rdfs:label>Дыхательная система</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#передается">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Вода"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Воздух"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Тест_кала">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#test"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#system"/>
+    <rdfs:label>Пищеварительная система</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#почки">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#стрептококки">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#желудок"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#легкие"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Стрептокок дыхательный</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65421</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#лимфотические_узлы">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#immune_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Орган</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#кости">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+    <rdfs:label>Бактериальные инфекции пищеварительной системы</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#толстый_кишечник">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Staphylococcus_aureus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#костный_мозг"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#лимфотические_узлы"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Стрептокок золотистый</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2113</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#цефалоспорины">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Антибиотики"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#upper_respiratory_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#raspiratory_system"/>
+    <rdfs:label>Верхняя дыхательная система</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#вызвана">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Патоген"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Klebsiella_pneumoniae">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#легкие"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#мочевой_пузырь"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Кесибелла пнемоническая</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18795</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Тип_передачи">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#желудок">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#лечится">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Антибиотики"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#легкие">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#down_respiratory_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#спиной_мозг">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#immune_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#мышечная_ткань">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#skin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Haemophilus_influenzae">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#бронхи"/>
+    <untitled-ontology-14:влияет rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#легкие"/>
+    <untitled-ontology-14:русское_название rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Гомофильная палочка</untitled-ontology-14:русское_название>
+    <untitled-ontology-14:случаи_заражения_2023 rdf:datatype="http://www.w3.org/2001/XMLSchema#int">243252</untitled-ontology-14:случаи_заражения_2023>
+    <untitled-ontology-14:смертность rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</untitled-ontology-14:смертность>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#tuberkulez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Туберкулез</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#поражаемая_ткань">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_skin_infections"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#skin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#последствие">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#ponos"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Хронический_туберкулез"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#смертность">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#находится">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#upper_respiratory_system"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#бронхи">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#down_respiratory_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#down_respiratory_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#raspiratory_system"/>
+    <rdfs:label>Нижняя дыхательная система</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#сердце">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#поражаемый_орган">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_digestive_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#immune_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#raspiratory_system"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#urinary_system"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Бактериальные инфекции</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#gastrit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Гастрит</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#dizenteria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Дизентерия</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections"/>
+    <rdfs:label>Система органов</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#cistit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Цистит</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#pnevmonia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Пневмония</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#суставы">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#трахея">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#down_respiratory_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+    <rdfs:label>Бактериальные инфекции имунной системы</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#immune_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_immune_system"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#system"/>
+    <rdfs:label>Имунная система</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Вода">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Тип_передачи"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#ponos">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+    <rdfs:label>Понос</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#пенициллины">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Антибиотики"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#тимус">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#immune_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#макролиды">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Антибиотики"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#кожа лица">
+    <rdf:type rdf:resource="skin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_respiratory_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+    <rdfs:label>Бактериальные инфекции дыхательной ситемы</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+    <rdfs:label>Бактериальные инфекции мочевой системы</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Тест_крови">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#test"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#мозг">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Молекулярный_тест">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#test"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#тонкий_кишечник">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#ногти">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#русское_название">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#случаи_заражения_2023">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#влияет">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#амоксициклин">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#test">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Тест</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Патоген">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#кровь">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Антибиотики">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
