@@ -4,10 +4,14 @@ import streamlit as st
 import datetime
 import asyncio
 
-from rdflib import Graph
+from rdflib import OWL, RDF, Graph, URIRef
 from streamlit_agraph import agraph, Node, Edge, Config
 
 from components.helpers.tools import get_saved_onthologies
+
+from streamlit_modal import Modal
+
+import streamlit.components.v1 as components
 
 def filter_nodes(x):
     parts = x.split("#")
@@ -24,6 +28,7 @@ def execute_sparql(g, query):
     return results
 
 def show_tab_view():
+    loaded_ontology_iri = None
     g = Graph()
 
     option = st.selectbox(
@@ -106,24 +111,46 @@ def show_tab_view():
             st.write("No results found.")
 
     st.divider()
-    st.header('Консоль запросов SPARQL (UPDATE)')
+    st.header('Форма SPARQL ( INSTANCE CREATE)')
 
-    sparql_update_req = st.text_area(
-        "Введите SPARQL (INSERT/UPDATE/DELETE) запрос:",
-        '''PREFIX ex: <http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#>
-
-           INSERT DATA {
-            ex:John ex:age 30 ;
-            ex:name "John Doe" .
-            ex:Mary ex:age 25 ;
-            ex:name "Mary Smith" .
-}
-        '''
+    selected_classes = st.multiselect(
+    'Select classes to create instances',
+    [filter_nodes(sub) for sub, _, _ in g.triples((None, RDF.type, OWL.Class))]
     )
 
-    if st.button("Execute update"):
-        g.update(sparql_update_req)
+    instance_name = st.text_input('Введите название экземпляра')
 
-        g.serialize(destination=f"./tmp/{option}_modified_data_{datetime.datetime.now()}.rdf", format="xml")
+    loaded_ontology_iri = [iri for iri in g.subjects(predicate=RDF.type, object=OWL.Ontology)][0]
 
-        st.write("Result - Success: 200 OK")
+    st.write(loaded_ontology_iri)
+
+    if st.button("Создать экземпляр"):
+        for selected_class in selected_classes:
+            g.add((URIRef(f"{loaded_ontology_iri}#{instance_name}"), 
+                   RDF.type, 
+                   URIRef(f"{loaded_ontology_iri}#{selected_class}")))
+            
+            st.success(f"Instance '{instance_name}' of class '{selected_class}' created successfully!")
+        g.serialize(destination=f"./tmp/{datetime.datetime.now()}.rdf", format="xml")
+
+
+
+    # sparql_update_req = st.text_area(
+    #     "Введите SPARQL (INSERT/UPDATE/DELETE) запрос:",
+    #     '''PREFIX ex: <http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#>
+
+    #        INSERT DATA {
+    #         ex:John ex:age 30 ;
+    #         ex:name "John Doe" .
+    #         ex:Mary ex:age 25 ;
+    #         ex:name "Mary Smith" .
+    #         }
+    #     '''
+    # )
+
+    # if st.button("Execute update"):
+    #     g.update(sparql_update_req)
+
+    #     g.serialize(destination=f"./tmp/{option}_modified_data_{datetime.datetime.now()}.rdf", format="xml")
+
+    #     st.write("Result - Success: 200 OK")

@@ -1,7 +1,9 @@
 import streamlit as st
 
+from components.helpers.tools import get_saved_onthologies
 from components.tabs.show import show_tab_view
 from components.tabs.uploader import uploader_tab_view
+from components.tabs.create import create_view_tab
 
 def main():
     st.title("RDF менеджер by Slavyan")

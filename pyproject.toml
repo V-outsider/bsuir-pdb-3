@@ -12,6 +12,7 @@ rdflib = "^7.0.0"
 matplotlib = "^3.8.4"
 networkx = "^3.3"
 streamlit-agraph = "^0.0.45"
+streamlit-modal = "^0.1.2"
 
 
 [build-system]
