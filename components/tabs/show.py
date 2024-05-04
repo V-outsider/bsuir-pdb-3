@@ -2,16 +2,12 @@ import networkx as nx
 import pandas as pd
 import streamlit as st
 import datetime
-import asyncio
 
 from rdflib import OWL, RDF, Graph, URIRef
 from streamlit_agraph import agraph, Node, Edge, Config
 
 from components.helpers.tools import get_saved_onthologies
 
-from streamlit_modal import Modal
-
-import streamlit.components.v1 as components
 
 def filter_nodes(x):
     parts = x.split("#")
