@@ -5,7 +5,7 @@ import streamlit as st
 import datetime
 import asyncio
 
-from rdflib import Graph, URIRef, RDF, OWL
+from rdflib import Graph, URIRef, RDF, OWL, RDFS
 from streamlit_agraph import agraph, Node, Edge, Config
 
 from components.helpers.tools import get_saved_onthologies
@@ -155,7 +155,7 @@ def show_tab_view():
     
     # Вывести выпадающий список для выбора класса
     selected_class = st.selectbox("Выберите класс", class_names)
-    
+
     if st.button("Создать"):
         instance_name = st.text_input("Введите имя нового экземпляра")
     
@@ -163,6 +163,11 @@ def show_tab_view():
             # Получить URI выбранного класса
             class_uri = next(g.subjects(RDF.type, URIRef(selected_class)))
     
+            print(class_uri)
+
+
+            print(class_uri)
+
             # Генерируйте URI для нового экземпляра
             instance_uri = f"{class_uri}#{instance_name}"
     
@@ -170,7 +175,7 @@ def show_tab_view():
             g.add((URIRef(instance_uri), RDF.type, URIRef(class_uri)))
     
             # Сериализуйте граф в формате XML и сохраните его
-            g.serialize(destination="tmp/modified_data_{}_.rdf".format(random.randint(1, 100000)), format="xml")
+            g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
     
             st.write("Экземпляр успешно создан в классе", selected_class)
         else:
@@ -181,3 +186,27 @@ def show_tab_view():
             g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
     
         st.write("Изменения сохранены.")
+    
+# Получить список всех классов
+    class_names = [str(class_uri).split('#')[-1] for class_uri in g.subjects(RDF.type, OWL.Class)]
+
+    # Вывести выпадающий список для выбора класса
+    selected_class = st.selectbox("Выберите классв", class_names)
+
+    selected_instance = st.text_input("Введите имя 'dddddd:")
+    # Получить URI выбранного класса
+    # class_uri = next(g.subjects(RDF.type, URIRef(selected_class)))
+    class_uri = f"http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#{selected_class}"
+    # Получить список всех экземпляров выбранного класса
+        # Вывести выпадающий список для выбора экземпляра
+    
+    if st.button("Связать"):
+        # Получить URI выбранного экземпляра
+        # Определить URI выбранного экземпляра
+        instance_uri = f"http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#{selected_instance}"
+        # Добавить тройку с связью между классом и экземпляром
+        g.add((URIRef(instance_uri), RDF.type, URIRef(class_uri)))
+        
+        # Сериализовать граф в формате XML и сохранить его
+        g.serialize(destination="tmp/modified_data2_.rdf", format="xml")
+        st.write("Связь успешно создана.")

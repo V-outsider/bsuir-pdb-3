@@ -133,6 +133,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни#12121212">
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Болезни"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#желудок">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#digestive_system"/>
@@ -293,6 +296,9 @@
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#system"/>
     <rdfs:label>Имунная система</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections#ппппппппппппппппппппппппппппппппппппппппппппппппппп">
+    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#bacterial_infections"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#urinary_system">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system"/>
@@ -317,9 +323,6 @@
   <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#почки">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#organ"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#2121212">
-    <rdf:type rdf:resource="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/eyon/ontologies/2024/3/untitled-ontology-14#Bacterial_infections_of_the_urinary_system">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

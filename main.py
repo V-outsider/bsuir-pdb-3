@@ -4,7 +4,28 @@ from components.tabs.show import show_tab_view
 from components.tabs.uploader import uploader_tab_view
 
 def main():
-    st.title("3 лабка онтологии менеджерить Гаевой")
+    
+
+# Добавление пользовательских стилей CSS
+    st.markdown(
+        """
+        <style>
+        .custom-container {
+            background-color: #E8E51E; /* Здесь можно указать цвет фона */
+            padding: 20px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Использование пользовательских стилей в контейнере
+with st.container():
+    st.markdown('<div class="custom-container">Protege 1000-7</div>', unsafe_allow_html=True)
+    st.title("3 лабка онтологии менеджерить Назаров")
+
+
+
 
     tab1, tab2 = st.tabs(["Просмотр и управление", "Сохранение"])
 

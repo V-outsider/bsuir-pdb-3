@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4"
+     xmlns:untitled-ontology-7="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4">
+        <owl:imports rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#используетсяДля -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#используетсяДля"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#находитсяВ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#находитсяВ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#применяетсяВ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#применяетсяВ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#формируетсяВ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#формируетсяВ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7#используется_для_материала -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7#используется_для_материала"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#растворимость -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#растворимость"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#содержитМеталл -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#содержитМеталл"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#содержитЭлемент -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#содержитЭлемент"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#твердостьПоМоосу -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#твердостьПоМоосу"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#цвет -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#цвет"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Аметист -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Аметист">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Архитектурное_проектирование -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Архитектурное_проектирование">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Барит -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Барит">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Галенит -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Галенит">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Гипс -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Гипс">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Искусство_и_ремесла -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Искусство_и_ремесла">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Кальцит -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Кальцит">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Кварц -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Кварц">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Косметика -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Косметика">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Малахит -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Малахит">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Металлургия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Металлургия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Нефтяная_бурение -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Нефтяная_бурение">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Пирит -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Пирит">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Тальк -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Тальк">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Флюорит -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Флюорит">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Химическая_промышленность -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Химическая_промышленность">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Энергетическая_промышленность -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Энергетическая_промышленность">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Алебастровый_гипс -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Алебастровый_гипс">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Гипс"/>
+        <untitled-ontology-4:применяетсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Строительство"/>
+        <untitled-ontology-4:твердостьПоМоосу rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-4:твердостьПоМоосу>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Английский_флюорит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Английский_флюорит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Флюорит"/>
+        <untitled-ontology-4:используетсяДля rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_и_обработка_металлов"/>
+        <untitled-ontology-4:цвет>Многоцветный</untitled-ontology-4:цвет>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Бразильский_аметист -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Бразильский_аметист">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Аметист"/>
+        <untitled-ontology-4:находитсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Геоды"/>
+        <untitled-ontology-7:используется_для_материала rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7#Гранит"/>
+        <untitled-ontology-4:цвет>Фиолетовый</untitled-ontology-4:цвет>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Бытовая_химия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Бытовая_химия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Косметика"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Геоды -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Геоды">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Нефтяная_бурение"/>
+        <untitled-ontology-4:содержитЭлемент>Барий</untitled-ontology-4:содержитЭлемент>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Горный_кристалл -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Горный_кристалл">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Кварц"/>
+        <untitled-ontology-4:твердостьПоМоосу rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-4:твердостьПоМоосу>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Декоративные_предметы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Декоративные_предметы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Искусство_и_ремесла"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Исландский_шпат -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Исландский_шпат">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Кальцит"/>
+        <untitled-ontology-4:формируетсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Осадочные_породы"/>
+        <untitled-ontology-4:растворимость>Растворим в кислотах</untitled-ontology-4:растворимость>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Испанский_Пирит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Испанский_Пирит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Пирит"/>
+        <untitled-ontology-4:находитсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_и_обработка_металлов"/>
+        <untitled-ontology-4:содержитМеталл>Железо</untitled-ontology-4:содержитМеталл>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Миссурийский_галенит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Миссурийский_галенит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Галенит"/>
+        <untitled-ontology-4:используетсяДля rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_аккумуляторов"/>
+        <untitled-ontology-4:содержитМеталл>Свинец</untitled-ontology-4:содержитМеталл>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Невадский_барит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Невадский_барит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Барит"/>
+        <untitled-ontology-4:применяетсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Геоды"/>
+        <untitled-ontology-4:содержитЭлемент>Барий</untitled-ontology-4:содержитЭлемент>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Осадочные_породы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Осадочные_породы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Химическая_промышленность"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_аккумуляторов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_аккумуляторов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Энергетическая_промышленность"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_и_обработка_металлов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Производство_и_обработка_металлов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Металлургия"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Строительство -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Строительство">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Архитектурное_проектирование"/>
+        <untitled-ontology-4:применяетсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Строительство"/>
+        <untitled-ontology-4:твердостьПоМоосу rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-4:твердостьПоМоосу>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Уральский_малахит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Уральский_малахит">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Малахит"/>
+        <untitled-ontology-4:используетсяДля rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Декоративные_предметы"/>
+        <untitled-ontology-4:цвет>Зеленый</untitled-ontology-4:цвет>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Шамотальковый_тальк -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Шамотальковый_тальк">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Тальк"/>
+        <untitled-ontology-4:применяетсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Бытовая_химия"/>
+        <untitled-ontology-4:твердостьПоМоосу rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-4:твердостьПоМоосу>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Ювелирные_изделия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Ювелирные_изделия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Обработанные_Минералы"/>
+        <untitled-ontology-4:применяетсяВ rdf:resource="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-4#Ювелирные_изделия"/>
+        <untitled-ontology-4:твердостьПоМоосу rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-4:твердостьПоМоосу>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7#Гранит -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2024/4/untitled-ontology-7#Гранит"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
